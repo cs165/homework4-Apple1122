@@ -1,3 +1,50 @@
 /*
 TODO(you): Write any additional styles you need here.
 */
+#loading {
+    color: #e2e2e2;
+    font-size: 2em;
+    font-style: italic;
+    height: 100vh;
+    width: 100vw;
+    text-align: center;
+    line-height: 100vh;
+    display: block;
+}
+#musicBox {
+    display: none;
+    flex-direction: column;
+    height: 100vh;
+    width: 100vw;
+}
+
+#musicBox #gif {
+    /* https://5xruby.tw/posts/flex/ */
+    flex-grow: 1; 
+}
+#foreground, 
+#background {
+    /* https://www.kip.com.tw/modules/news/article.php?storyid=35 */
+    background-size: cover;
+    background-position: center center;
+    background-repeat: no-repeat;
+    position: absolute;
+    top: 0;
+    height: 100%;
+    width: 100%;
+}
+#footer {
+    background-color: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    z-index: 100;
+    height: 70px;
+    width: 100%;
+}
+#button {
+    background-image: url(images/pause.png);
+    background-size: cover;
+    width: 60px;
+    height: 60px;
+}
